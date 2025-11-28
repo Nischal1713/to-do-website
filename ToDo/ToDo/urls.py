@@ -25,4 +25,8 @@ urlpatterns = [
 
     #todo
     path("addtask/",views.addtask,name="addtask"),
+    path("mark_as_done/<int:task_id>/",views.mark_as_done,name="mark_as_done"),
+    path("undo/<int:task_id>/",views.undo,name="undo"),
+    path("delete/<int:task_id>/",views.delete,name="delete"),
+    path("edit/<int:task_id>/",views.edit,name="edit"),
 ]
