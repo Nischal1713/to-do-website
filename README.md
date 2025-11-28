@@ -18,15 +18,6 @@ This project allows users to add tasks, update them, mark them as completed, und
 
 ---
 
-## 📸 Screenshots
-Add your images inside a folder named **`/screenshots`** and rename them like this:
-
-```
-screenshots/
-│── todo-list.png
-│── edit-task.png
-```
-
 Example screenshot sections in README:
 
 ### 📝 ToDo List Page
