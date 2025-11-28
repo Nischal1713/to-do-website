@@ -30,11 +30,11 @@ Example screenshot sections in README:
 
 ## 🛠 Tech Stack
 
-- **Python 3.x**
-- **Django 4+**
-- **Bootstrap 5**
-- **SQLite (default)**  
-  *(Can be upgraded to PostgreSQL/MySQL easily)*
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Django](https://img.shields.io/badge/Django-4.x-green)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 ---
 
