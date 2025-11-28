@@ -47,8 +47,6 @@ Example screenshot sections in README:
 
 ---
 
-Visit: **http://127.0.0.1:8000/**
-
 ## 💡 Future Enhancements (Optional)
 - User authentication (login-based tasks)
 - Task categories/tags
