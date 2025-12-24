@@ -12,19 +12,82 @@
         .form-control{
         padding: 1.375rem .75rem !important;
     }
+    body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            min-height: 100vh;
+        }
+
+        .app-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+        }
+
+        .task-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease;
+        }
+
+        .task-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .task-text {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #6c757d;
+        }
+
+        .btn-icon {
+            width: 34px;
+            height: 34px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scroll-box {
+            max-height: 420px;
+            overflow-y: auto;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h3 class="pt-5 text-center">Edit Task</h3>
-        <form action="{% url 'edit' get_task.id %}" method="POST" style="width: 50%; margin: auto;">
+
+<div class="container">
+
+    <div class="edit-card text-center">
+        <h3 class="mb-2">✏️ Edit Task</h3>
+        <p class="text-muted mb-4">Update your task and stay productive</p>
+
+        <form action="{% url 'edit' get_task.id %}" method="POST">
             {% csrf_token %}
-            <div class="form-group">
-                <input type="text" value="{{ get_task.task }}" name="task" class="form-control" placeholder="Edit your task">
+
+            <div class="mb-3 text-start">
+                <label class="form-label fw-semibold">Task Name</label>
+                <input type="text"
+                       name="task"
+                       value="{{ get_task.task }}"
+                       class="form-control"
+                       placeholder="Edit your task">
             </div>
-            <button type="submit" class="btn btn-primary mt-3">update</button>
+
+            <button type="submit" class="btn btn-primary btn-update w-100">
+                <i class="fa fa-save"></i> Update Task
+            </button>
         </form>
     </div>
-    
+
+</div>
+
 </body>
+
 </html>
